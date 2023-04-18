@@ -1,0 +1,227 @@
+
+/*  Can change this but the marker for what page you are currently on */
+/* header 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/*  Formatting grid for the profile section part of the first page */
+/* Maybe add scrollable version for this first part to reduce clunkiness */
+.profile 
+{
+    display: grid;
+    grid-template-columns: 30% 10% 50%;
+    justify-content: center;
+    /* align-items: center; */
+    column-gap: 10px;
+    border-bottom: 10px solid white;
+    /* width: 90%; */
+    padding-bottom: 20px;
+}
+
+
+.text p
+{
+    font-size: 2vw;
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    align-content: center;
+}
+
+ .text p:nth-child(6), .text p:nth-child(7), .text p:nth-child(8)
+{
+    display: none;
+}
+
+
+.profile img 
+{
+    /* max-width: 100%;
+    height: 100%; */
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+#professional 
+{
+    margin-right: 30px;
+    grid-column: 3 / span 1;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+main 
+{
+    padding-bottom: 30px;
+}
+
+/* Default grid styling: mobile */
+.pics 
+{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+        column-gap: 10px;
+        border-right: 10px;
+        padding-left: 3%;
+        padding-right: 3%;
+}
+
+.pics p 
+{
+    display: none;
+}
+
+.pics img 
+{
+    position: relative;
+}
+
+.alt
+{
+    position: absolute;
+    display: none;
+    transform: translate(-45%, 60%);
+    z-index: 1000;
+    color: black;
+    font-weight: bold;
+    font-size: 3vw;
+
+}
+
+#white1, #white2
+{
+    color: white;
+}
+
+    /* Text before grid */
+#gridintro 
+{
+    text-align: center;
+}
+
+.label 
+{
+
+    text-align: center;
+    grid-column: 1 / span 3;
+
+}
+
+/*  Make the text dissapear for now */
+
+/* Mobile -- only show two pictures */
+.buds, .profpic, .family 
+{
+    display: none;
+}
+
+/* Mobile - only two pictures shown, clickable features */
+#note 
+{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+
+/* Media query for tableys */
+@media only screen and (min-width: 760px)
+{
+
+    /* Changing visibility settings */
+    /* Improvement: change visibility/text overcrowding on this */
+
+.buds, .profpic, .family 
+    {
+        display: inline;
+    } 
+
+.pics p 
+    {
+        display: inline;
+        color: #5A5A5A;
+        font-size: 2vw;
+    }
+     
+.alt 
+{
+    display: none;
+}
+
+
+header
+{
+    display: flex;
+    background-color: lightblue;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-bottom: white 5px solid;
+    /* styling */
+}
+
+
+    .pics
+    {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        height: 100%;
+        row-gap: 10px;
+        column-gap: 15px;
+        justify-content: space-evenly;
+        align-content: start;
+        align-items: end;
+        text-align: center;
+        margin-bottom: 40px;
+        border-top: 20px white solid;
+
+    }
+
+    header 
+    {
+        border-bottom: 20px solid white;
+    }
+    
+    .celebrate 
+    {
+        display: grid;
+    }
+
+    #note 
+    {
+        display: none;
+    }
+}
+
+/* Larger screen styling */
+@media only screen and (min-width: 1000px)
+{
+
+
+    .text p:nth-child(6), .text p:nth-child(7), .text p:nth-child(8)
+    {
+        display: block;
+    }
+
+    .text 
+    {
+        font-size: 1.5vw;
+    }
+
+    .profile 
+    {
+        align-items: none;
+    }
+    
+
+}

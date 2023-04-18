@@ -1,0 +1,211 @@
+/* Universal styling */
+*{
+    background-color: seashell;
+    border: border-box;
+    width: 100%;
+    font-family: Georgia, serif
+
+}
+
+
+/*  General styling for elements */
+h1 
+{
+    font-size: 5vw;
+    line-height: 2;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    text-align: center;
+    font-weight: 300;
+}
+
+h2{
+    font-size: 4vw;
+    padding: 15px;
+}
+
+h3 
+{
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+
+
+p 
+{
+    font-size: 2vw;
+}
+
+/*  Focus mode */
+
+
+
+/* Navigation styling */
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+/* Adding navigation hover features */
+.pages a:hover
+{
+    font-weight: bold;
+}
+
+
+/* Making skip only appear when it is tabbed */
+#skipToMain{
+    background: darkblue;
+    color: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -80px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    margin: 0;
+    width: 20%;
+    font-size: 2vw;
+  }
+  
+  #skipToMain:focus{
+    color: white;
+    top:20px;
+    text-decoration-style: solid;   
+  }
+  
+  *:focus{
+    border: 2px solid black;
+  }
+
+/* #skipToMain:hover
+{
+    display: block;
+    font-weight: bold;
+} */
+
+.nav_links{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav, .skip
+{
+    margin: 3%;
+}
+
+/* Adding current page styling */
+#current
+{
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+    font-weight: bold;
+    padding: 5px;
+    border: solid white 2px;
+}
+
+.nav_links li
+{
+    width: 15%;
+}
+
+/* Changing the header background and setting the display to flex */
+body a + header
+{
+    display: flex;
+    background-color: lightblue;
+    flex-direction: row; 
+    /* row */
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: white 10px solid;
+    font-size: 2vw;
+    /* styling */
+}
+
+header img 
+{
+    width: 7%;
+    height: 7%;
+}
+
+/* Website default
+header
+{
+    display: flex;
+    background-color: lightblue;
+    flex-direction: column; 
+
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: white 10px solid;
+ 
+} */
+
+
+/*  Footer styling */
+footer 
+{
+    border-top: white 10px solid; 
+    display: flex; 
+    background-color: lightblue;   
+    flex-direction: column;
+    text-align: center;
+    padding: 1%;
+    align-content: center;
+}
+
+footer ul 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+footer ul a:hover
+{
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+    font-size: 2vw;
+}
+
+footer a 
+{
+    font-size: 1.5vw;
+}
+
+
+
+/* #instagram
+ {
+    background-image: url('../img/InstaIcon.png');
+    background-size: 40px;
+ }
+
+ #linkedin
+ {
+    background-image: url('../img/Linkedin.png');
+    background-size: 80px;
+
+ } */
+
+footer p 
+{
+    font-size: 1.5vw;
+    padding-top: 10px;
+}
+
+@media (prefers-contrast:more)
+{
+    *{
+        background-color: white;
+        color: black;
+        
+    }
+}

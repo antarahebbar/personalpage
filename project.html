@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travels and Adventures</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/universal.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/project.css" /> 
+
+</head>
+
+<body>
+    <a class = "skip" id = "skipToMain" href="#skip">Skip to Main Content</a>
+    <header>
+        <img src = "img/SmilyIcon.png" alt = "Smily Icon">
+        <nav>
+            <ul class="nav_links">
+                <li class = "pages"><a href="index.html" id =>About</a></li>
+                <li class = "pages"><a href="project.html" id = "current">Projects</a></li>
+                <li class = "pages"><a href="travel.html" id = "travel">Adventures</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+<!-- fix the skip to main here -->
+<main class = "main" id = "skip">
+
+    <h1> Fun CS Projects </h1>
+    
+    <h2 id = "clickable">Click image for link to project!</h2>
+    <div class = "projpics" id = "muffins">
+        <h2 tabindex = "0"> Muffins</h2>
+                <img class = "projicon" src = "img/Muffins.jpg" alt = "Muffins project">
+                <button class = "javabutton" onclick = "window.location.href = 'https://github.com/GeneralPoxter/Muffins.jl';"> See Github! </button>
+            <div>
+                <h2 id = "label1"> Combinatorics Algorithms into Code</h2>
+                <button id = "hiddenbutton1" onclick = "window.location.href = 'https://github.com/GeneralPoxter/Muffins.jl';"> See Github! </button>
+                <p>I was selected by Professor Bill Gasarch to join his project team solving The Muffin Problem, a combinatorics math problem. 
+                    I worked for two summers to create a public package solving the problem, using a combination of 5 of his algorithms, optimized to solve thousands of muffin problems. I also learned the Julia programming language!</p>
+            </div>
+
+    </div>
+
+    <div class = "projpics" id = "disease">
+        <h2 tabindex = "0"> Disease Classification Project</h2>
+        <img class = "projicon" src = "img/Disease.jpg" alt = "Disease classification project">
+        <button class = "javabutton" onclick = "window.location.href = 'https://colab.research.google.com/drive/1MO7hxPVVMoVjCfXL4jp9t-QACEguN65m?usp=sharing';">See Google Collab!</button>
+        <div>
+            <h2 id = "label2"> Machine Learning & Disease Prediction</h2>
+            <button id = "hiddenbutton2" onclick = "window.location.href = 'https://colab.research.google.com/drive/1MO7hxPVVMoVjCfXL4jp9t-QACEguN65m?usp=sharing';">See Google Collab!</button>
+            <p> Alongside 4 other engineers, I created a high-precision machine learning model that produced prognoses based on symptoms. I implemented 2 supervised and 1 unsupervised algorithms, 
+                KNN, Random Forest and K-Means Clustering, on PCA-reduced data. I also produced a 25-page project finding report and presented a project summary to a Shark Tank panel.</p>
+        </div>
+
+    </div>
+
+    <div class = "projpics" id = "music">
+        <h2 tabindex = "0"> Lyric-Based Genre Classification</h2>
+        <img class = "projicon" src = "img/MusicGenre.png" alt = "Music classification project">
+        <button class = "javabutton" onclick = "window.location.href = 'https://colab.research.google.com/drive/1RjD01m2fulFHcjrOHxwi-rzmAnY1nxrV?usp=sharing';">See Google Collab!</button>
+        <div>
+            <h2 id = "label3"> Machine Learning & Genre Prediction</h2>
+            <button id = "hiddenbutton3" onclick = "window.location.href = 'https://colab.research.google.com/drive/1RjD01m2fulFHcjrOHxwi-rzmAnY1nxrV?usp=sharing';">See Google Collab!</button>
+            <p>I implemented LSTM and NMBA algorithms to create a successful lyric-based classifier alongside my partner. 
+                We started by researching and applying the Keras and Seaborn Python packages to a clean dataset. Our final model had a 93% overall accuracy,
+            with up to 97% on genres like hip-hop.</p>
+        </div>
+    </div>
+
+    <div class = "projpics" id = "sql">
+        <h2 tabindex = "0">SillyQL</h2>
+        <img class = "projicon" src = "img/SQL.jpg" alt = "SQL Project">
+        <button class = "javabutton" onclick = "window.location.href = 'https://eecs281staff.github.io/p3-sillyql/';">See project spec!</button>
+        <div>
+            <h2 id = "label4">Creating a SQL Interface</h2>
+            <button id = "hiddenbutton4" onclick = "window.location.href = 'https://eecs281staff.github.io/p3-sillyql/';">See project spec!</button>
+            <p> This project involved creating a database management platform and implementing common SQL functions for my own version of the interface.
+                The platform was able to create, delete, generate indices, and manipulate rows of a table based on conditionals. This project taught me 
+                how to combine multiple data structures to create a larger representation of data!
+            </p> 
+        </div>
+    </div>
+
+</main>
+<script src = "js/project.js"></script>
+
+<footer>
+    <p>Antara Hebbar, University of Michigan</p>
+    <p>Contact me at ahebbar@umich.edu</p>
+    <ul class = "iconslinks">
+        <li><a id = "linkedin" href="https://www.linkedin.com/in/antara-hebbar">Linkedin</a></li>
+        <li><a id = "instagram" href = "https://instagram.com/antarahebbar?igshid=YmMyMTA2M2Y=">Instagram</a></li>
+    </ul>
+  </footer>
+</html>

@@ -1,0 +1,120 @@
+
+h3 
+{
+    padding: 20px;
+    margin: 0px;
+}
+
+h2 
+{
+    font-weight: bold;
+}
+
+main 
+{
+    padding-bottom: 100px;
+}
+
+#note 
+{
+    font-size: 2.5vw;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: none;
+}
+
+/* Styling for scrollable grids */
+.travelpics img, .italypics img, .greekpics img
+{
+    border-radius: 20px;
+    border: 2px black solid;
+    height: 30%;
+    width: 70%;
+    margin-top: 5px;
+}
+
+.travelpics, .italypics, .greekpics
+{
+    display:grid;
+    grid-auto-columns: calc(100% - 5rem);
+    grid-auto-flow: column;
+    overflow-x: auto;
+    background-color: white;
+    text-align: center;
+    border: lightblue 10px solid;
+    width: 85%;
+    margin: auto;
+    align-items: end;
+}
+
+.greekpics img
+{
+    width: 80%;
+}
+
+/* changes made because now the scrollable grid takes up the entire time */
+@media only screen and (min-width: 760px)
+{
+    .travelpics, .italypics, .greekpics
+    {
+        grid-auto-columns: calc(100% - 16rem);
+        width: 90%;
+        margin-left: 10%;
+        border: lightblue 7px solid;
+    }
+
+    .travelpics h3, .italypics h3, .greekpics h3
+    {
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (min-width: 1000px)
+{
+    .travelpics, .italypics, .greekpics
+    {
+        grid-auto-columns: calc(100% - 35rem);
+        border: lightblue 10px solid;
+        width: 90%;
+        margin-left: 10%;
+    }
+
+}
+
+/* Larger screen styling */
+@media only screen and (min-width: 1260px)
+{
+
+
+    h3
+    {
+        font-size: 2vw;
+        margin-right: 20px;
+        margin-right: 20px;
+        /* visibility: hidden; */
+    }
+
+    h2 
+    {
+        font-size: 3vw;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 50px;
+    }
+
+    .travelpics, .italypics, .greekpics
+    {
+        grid-auto-columns: calc(100% - 50rem);
+        border: lightblue 10px solid;
+        width: 90%;
+        margin-left: 10%;
+    }
+
+    .travelpics h3, .italypics h3, .greekpics h3
+    {
+        font-size: 1.5vw;
+        font-weight: normal;
+    }
+    
+
+}

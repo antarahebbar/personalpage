@@ -1,0 +1,163 @@
+#hiddenbutton1, #hiddenbutton2, #hiddenbutton3, #hiddenbutton4
+{
+    display: none;
+}
+
+#clickable 
+{
+    color: darkblue;
+    font-size: 3vw;
+    padding: 30px;
+    text-align: center;
+}
+
+#label1, #label2, #label3, #label4
+    {
+        display: none;
+    }
+.projpics h3
+{
+    font-weight: bold;
+    display: none;
+}
+
+.projpics p 
+{
+    display: none;
+}
+
+.projpics img 
+{
+    border-radius: 30px;
+    border: 3px solid black;
+    width: 40%;
+    height: 40%;
+    /* display: none; */
+}
+
+.projpics 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+
+.projpics button
+{
+    background-color: lightblue;
+    border: black solid 2px;
+    font-size: 3vw;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight:bold;
+    /* position: relative; */
+    display: none;
+
+}
+
+
+.projpics h2
+{
+    font-size: 5vw;
+    text-align: center;
+    /* position: absolute; */
+}
+
+
+@media only screen and (min-width: 760px)
+{
+    #clickable
+    {
+        display: none;
+    }
+
+    .projpics h3
+    {
+    display: inherit;
+    }
+
+    #hiddenbutton1, #hiddenbutton2, #hiddenbutton3, #hiddenbutton4
+    {
+        display: inherit;
+        font-weight: normal;
+
+    }
+
+    .projpics h2 
+    {
+    display: none;
+    }
+
+    #label1, #label2, #label3, #label4
+    {
+        display: inherit;
+        text-align:left;
+        font-size: 3vw;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .javabutton 
+    {
+        background-color: lightblue;
+        margin: auto;
+        position: relative;
+    }
+
+    .projpics img 
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .projpics 
+    {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 30% 1fr;
+        align-items: stretch;
+        border: seashell 10px solid;
+        column-gap: 20px;
+        padding: 20px;
+        background-color: white;
+        width: 90%;
+        margin: auto;
+    }
+
+    main 
+    {
+        padding-bottom: 50px;
+    }
+
+    .projpics img 
+    {
+        border-radius: 30px;
+        border: 3px solid black;
+    }
+}
+
+
+
+/* Larger screen styling */
+@media only screen and (min-width: 1000px)
+{
+
+    #hiddenbutton1, #hiddenbutton2, #hiddenbutton3, #hiddenbutton4
+    {
+        display: none;
+    }
+
+    .projpics p 
+    {
+        display: inherit;
+    }
+
+    #clickable
+    {
+        display: inherit;
+
+    }
+}
